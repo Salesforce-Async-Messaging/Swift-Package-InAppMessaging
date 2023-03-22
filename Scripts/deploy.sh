@@ -127,7 +127,7 @@ validateSwiftPackageManagerBranch() {
 }
 
 mergeBranchIntoMain() {
-  git checkout ${REMOTE} main
+  git checkout main
   
   promte "Successfully checked out main. Ok to merge ${RELEASE_BRANCH} into main?"
 
