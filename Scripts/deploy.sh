@@ -129,7 +129,7 @@ validateSwiftPackageManagerBranch() {
 mergeBranchIntoMain() {
   git checkout main
   
-  promte "Successfully checked out main. Ok to merge ${RELEASE_BRANCH} into main?"
+  prompt "Successfully checked out main. Ok to merge ${RELEASE_BRANCH} into main?"
 
   git merge ${RELEASE_BRANCH}
 }
