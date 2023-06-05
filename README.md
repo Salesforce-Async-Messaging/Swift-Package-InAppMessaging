@@ -5,6 +5,3 @@ This repository contains a [Swift package file](https://developer.apple.com/docu
 * [Messaging for In-App and Web Learning Map](https://help.salesforce.com/s/articleView?id=sf.miaw_intro_landing.htm)
 * [Messaging for In-App Developer Guide](https://developer.salesforce.com/docs/service/messaging-in-app/overview)
 
-To get the checksum for the packages use the following command:
-```swift package compute-checksum /path/to/some.xcframework.zip```
-
