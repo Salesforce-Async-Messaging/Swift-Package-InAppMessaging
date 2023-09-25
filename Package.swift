@@ -12,13 +12,13 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "SMIClientCore",
-            url: "https://salesforce-async-messaging.s3.amazonaws.com/public/ios/1.3.2/SMIClientCore-Release.xcframework.zip",
-            checksum: "2713a23f052e137156d749289780e1fa440ae95502bedc7ebf15ebf7f4fd9cf3"
+            url: "https://salesforce-async-messaging.s3.amazonaws.com/public/ios/1.3.3/SMIClientCore-Release.xcframework.zip",
+            checksum: "f7b458e1b81e6662fcb4ae35d04ab4d4bf20cda5407dfd8cb5bd28d14ba0afca"
         ),
         .binaryTarget(
             name: "SMIClientUI",
-            url: "https://salesforce-async-messaging.s3.amazonaws.com/public/ios/1.3.2/SMIClientUI-Release.xcframework.zip",
-            checksum: "2ae2adfb2f629dc354f24a8fd449fe3f3f424ef64b804291ad7c56d14e7ebaee"
+            url: "https://salesforce-async-messaging.s3.amazonaws.com/public/ios/1.3.3/SMIClientUI-Release.xcframework.zip",
+            checksum: "dbab401df53ab5403c12cbf0c3a34baa1633ba9b369f4864d0e7a9f0ce46c4e0"
         ),
     ]
 )
