@@ -4,6 +4,9 @@ import PackageDescription
 
 let package = Package(
     name: "Swift-InAppMessaging",
+    platforms: [
+        .iOS(.v13)
+    ],
     products: [
         .library(
             name: "Swift-InAppMessaging",
@@ -28,6 +31,9 @@ let package = Package(
             dependencies: [
                 "SMIClientCore",
                 .product(name: "SQLCipher", package: "SQLCipher.swift")
+            ],
+            cSettings: [
+                .define("SQLITE_HAS_CODEC", to: nil)
             ]
         )
     ]
