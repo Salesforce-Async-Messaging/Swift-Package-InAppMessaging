@@ -5,36 +5,28 @@ import PackageDescription
 let package = Package(
     name: "Swift-InAppMessaging",
     platforms: [
-        .iOS(.v13)
+        .iOS(.v15)
     ],
     products: [
         .library(
             name: "Swift-InAppMessaging",
-            targets: ["SMIClientCore", "SMIClientUI", "SMIClientCoreWrapper"]),
+            targets: ["SMIClientUI", "SMIClientUIWrapper"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/sqlcipher/SQLCipher.swift.git", from: "4.10.0")
+        .package(url: "https://github.com/Salesforce-Async-Messaging/SMIClientCore-iOS.swift.git", exact: "1.11.0")
     ],
     targets: [
         .binaryTarget(
-            name: "SMIClientCore",
-            url: "https://salesforce-async-messaging.s3.amazonaws.com/public/ios/1.10.4/SMIClientCore-Release.xcframework.zip",
-            checksum: "41dfd1ac1fa7e4ec23e06c4c7bb4506aba71ac0b251f54e70e1824ab34d33c67"
-        ),
-        .binaryTarget(
             name: "SMIClientUI",
-            url: "https://salesforce-async-messaging.s3.amazonaws.com/public/ios/1.10.4/SMIClientUI-Release.xcframework.zip",
-            checksum: "26b9ba9452864375663aefa300a7f66ce6a112e0d8ecc86083276336bdc15e59"
+            url: "https://salesforce-async-messaging.s3.amazonaws.com/public/ios/1.11.0/SMIClientUI-Release.xcframework.zip",
+            checksum: "7388deb61c8f7ce89af63ad384f01c6e36fdab38c193651c91df8827883a23c9"
         ),
         .target(
-            name: "SMIClientCoreWrapper",
+            name: "SMIClientUIWrapper",
             dependencies: [
-                "SMIClientCore",
-                .product(name: "SQLCipher", package: "SQLCipher.swift")
+                "SMIClientUI",
+                .product(name: "SMIClientCore", package: "SMIClientCore-iOS.swift")
             ],
-            cSettings: [
-                .define("SQLITE_HAS_CODEC", to: nil)
-            ]
         )
     ]
 )
