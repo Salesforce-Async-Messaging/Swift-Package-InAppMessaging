@@ -19,7 +19,7 @@ let package = Package(
         .binaryTarget(
             name: "SMIClientUI",
             url: "https://salesforce-async-messaging.s3.amazonaws.com/public/ios/1.11.1/SMIClientUI-Release.xcframework.zip",
-            checksum: "afb5c09a7436836df8d6eea4376eaddc4dbbc8a000f9e6262d7322d964da67c5"
+            checksum: "1f59802d958d5bbb0f274e1aa63bd9947c424e0c9c455f72629f091f83e32c71"
         ),
         .target(
             name: "SMIClientUIWrapper",
