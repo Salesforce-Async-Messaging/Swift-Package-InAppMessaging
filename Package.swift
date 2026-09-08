@@ -13,13 +13,13 @@ let package = Package(
             targets: ["SMIClientUI", "SMIClientUIWrapper"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/Salesforce-Async-Messaging/SMIClientCore-iOS.swift.git", exact: "1.11.3")
+        .package(url: "https://github.com/Salesforce-Async-Messaging/SMIClientCore-iOS.swift.git", exact: "1.12.1")
     ],
     targets: [
         .binaryTarget(
             name: "SMIClientUI",
-            url: "https://salesforce-async-messaging.s3.amazonaws.com/public/ios/1.11.3/SMIClientUI-Release.xcframework.zip",
-            checksum: "d171d49131b5b676fa5c8630a76d44883e1edf2cf368542c7e637b431a45b08c"
+            url: "https://salesforce-async-messaging.s3.amazonaws.com/public/ios/1.12.1/SMIClientUI-Release.xcframework.zip",
+            checksum: "e9a58d3fcbdb4e338a350089ae3d54c10c40906a5679ae90ff047faf7127e48b"
         ),
         .target(
             name: "SMIClientUIWrapper",
